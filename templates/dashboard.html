@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+</head>
+<body>
+    <div>
+        <h1>Welcome User</h1>
+        <div>
+            <h2>Student Form</h2>
+            <form method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <!-- {% for f in form %}
+                    <table>
+                        <tr>
+                            <td style="margin-right: 100px;">
+                                {{f.label}}
+                            </td>
+                            <td>
+                                {{f}}
+                            </td>
+                        </tr>
+                    </table>
+                {% endfor %} -->
+                <br>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

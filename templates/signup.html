@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+</head>
+<body>
+    <div>
+        <h1>Sign Up here...</h1>
+        <div>
+            <form method="POST" action="">
+                {% csrf_token %}
+                {{form1}}
+                <button type="submit">Submit</button>
+            </form>
+            <a href="/signin">Already have account?</a>
+        </div>
+    </div>
+    
+</body>
+</html>
